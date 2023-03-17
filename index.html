@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+    
+</head>
+<body>
+    <div id="sidebar">
+        <div id="odinLogoWrapper">
+            <img src="img/odin-lined.png" alt="Odin's logo" id="odinLogo">ODIN
+        </div>
+    </div>
+    <div id="formWrapper">
+        <div id="paragraphWrapper">
+        <p>This is not a real online service! You know you need something <br> like this in your life to help you realize your deepest dreams.
+        </p>
+        <p> 
+        Sign up <em>now</em> to get started.
+        </p>  
+        
+
+        <p>You <em>know</em> you want to.
+        </p>
+        </div>
+        
+        <form method="post" action="https://httpbin.org/post" class="signupForm" id="signupForm" >
+            <p>Let's do this!</p>
+            
+            <fieldset>
+                
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" name="firstName" type="text" placeholder="John">
+             </fieldset>  
+            <fieldset>   
+                
+                    <label for="LastName">Last Name</label>
+                    <input id="lastName" name="lastName" type="text" placeholder="Doe">
+                
+            </fieldset>
+            <fieldset>
+                
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Johndoe@gmail.com">
+            </fieldset>
+            <fieldset>  
+                    <label for="telNum">Phone Number</label>
+                    <input id="telNum" name="telNum" type="tel" placeholder="+32654395328">
+            </fieldset>
+            <fieldset>
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" class="error" required>
+            </fieldset>
+            <fieldset>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input id="confirmPassword" name="confirmPassword" type="password" class="error" required>
+            </fieldset>
+            
+        
+        </form>
+        <div id="buttonWrapper">
+            <button type="submit" form="signupForm">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
