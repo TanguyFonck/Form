@@ -2,7 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Skranji&display=swap');
 
 * {
-    font-size: 20px;
+    font-size: 18px;
     box-sizing: border-box;
     
     
@@ -11,13 +11,14 @@
 body {
     display: flex;
     margin: 0;
-    max-height: 100vh;
+    height: 100vh;
 }
 
 #sidebar {
     background-image: url(img/green-leaf.avif);
     width: 35%;
-    height: 100vh;
+    /* height: 100%; */
+    
     
 }
 
@@ -40,8 +41,10 @@ body {
     
 }
 img {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 100px;
+    max-height: 100px;
+    min-height: 50px;
+    min-width: 50px;
 }
 
 
@@ -49,28 +52,23 @@ img {
 
 #formWrapper {
     
-    background-color: white;
-    width: 75%;
+    background-color: whitesmoke;
+    /* width: 75%; */
+    
+    display: flex;
+    flex-direction: column;
 }
 
 form {
-    padding: 20px;
+    /* padding: 20px; */
     background-color: white;
-    font-size: 20px;
-    width: 70%;
-}    
-
-/* .formContainer {
-
+    font-size: 15px;
     width: 100%;
-    color: white;
-
-} */
+    /* height: 40%;
+    max-height: 40%; */
+    max-width: 100%;
     
-    
-    
-    
-    
+}    
 
 form > p {
     font-weight: 900;
@@ -84,6 +82,8 @@ form > p {
     padding-top: 50px;
     background-color: whitesmoke;
     width: 100%;
+    height: 40%;
+    max-height: 40%;
 }
 
 button {
@@ -96,7 +96,9 @@ button {
 #buttonWrapper {
     padding: 30px;
     background-color: whitesmoke;
-    height: 25%;
+    height: 20%;
+    max-height: 20%;
+       
 }
 
 input {
@@ -126,7 +128,7 @@ em {
 a {
     color: #596D48;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 input:focus {
@@ -136,13 +138,6 @@ input:focus {
     
 }
 
-.formWrapper {
-    
-    
-
-}
-
-
 input,label {
     display: flex;
 
@@ -150,4 +145,8 @@ input,label {
     
     
     
+}
+
+.odinTitle {
+    font-size: 50px;
 }
